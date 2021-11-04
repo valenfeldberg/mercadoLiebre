@@ -1,0 +1,59 @@
+body {
+    background-color: #EAC926;
+}
+
+html{
+    font-family: Roboto;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+#precio {
+    font-size: 18px;
+}
+
+#desc_descr {
+    font-size: 16px;
+}
+
+.cuotas {
+    text-align: center;
+}
+
+.burger-menu{
+    padding: 8px;
+    background-color: #03264C;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+}
+
+.busqueda {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h5 {
+    font-weight: bold;
+    color: #666;
+}
+
+h6 {
+    color: #666;
+}
+
+.foot {
+    background-color: white;
+}
