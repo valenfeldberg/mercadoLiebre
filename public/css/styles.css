@@ -1,59 +1,216 @@
-body {
-    background-color: #EAC926;
+@media (min-width: 361px){
+    body {
+        background-color: #EAC926;
+    }
+
+    html{
+        font-family: Roboto;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    main {
+        text-align: center;
+        width: 90vw;
+    }
+
+    .visita {
+        font-size: 12px;
+    }
+
+    .precio {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .descuento {
+        font-size: 16px;
+        font-weight: 300;
+        color: #39b54a;
+    }
+
+    .cuotas {
+        margin-left: 10%;
+    }
+
+    .burger-menu {
+        padding: 12px;
+        background-color: #03264C;
+        color: white;
+        margin-left: 40%;
+        margin-bottom: 10%;
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .tarjeta {
+        padding: 12px;
+        color: #03264C;
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer i {
+        font-size: 32px;
+        color: blue;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+
+    h3 {
+        font-size: 32px;
+        text-align: center;
+        /*padding: 1rem; */
+        color: #39b54a;
+    }
+
+    footer h3 {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .camion {
+        font-size: 32px;
+        text-align: center;
+        /*padding: 1rem; */
+        color: #39b54a;
+    }
+
+    .articulo {
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article {
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    section {
+        border: solid 1px #ebebeb;
+        margin-top: 15px;
+    }
+
 }
 
-html{
-    font-family: Roboto;
-}
+@media (max-width: 769px){
+    body {
+        background-color: #EAC926;
+    }
 
-p {
-    font-size: 12px;
-}
+    html{
+        font-family: Roboto;
+    }
 
-.titulares {
-    font-size: 24px;
-}
+    p {
+        font-size: 12px;
+    }
 
-#precio {
-    font-size: 18px;
-}
+    main {
+        text-align: center;
+        width: 90vw;
+    }
 
-#desc_descr {
-    font-size: 16px;
-}
+    .visita {
+        font-size: 12px;
+    }
 
-.cuotas {
-    text-align: center;
-}
+    .precio {
+        font-size: 18px;
+        font-weight: 300;
+    }
 
-.burger-menu{
-    padding: 8px;
-    background-color: #03264C;
-    color: white;
-}
+    .descuento {
+        font-size: 16px;
+        font-weight: 300;
+        color: #39b54a;
+    }
 
-.footer{
-    text-align: center;
-}
+    .cuotas {
+        margin-left: 10%;
+    }
 
-.busqueda {
-    background-color: white;
-}
+    .burger-menu {
+        padding: 12px;
+        background-color: #03264C;
+        color: white;
+        margin-left: 40%;
+        margin-bottom: 10%;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-h5 {
-    font-weight: bold;
-    color: #666;
-}
+    .tarjeta {
+        padding: 12px;
+        color: #03264C;
+        margin: auto;
+    }
 
-h6 {
-    color: #666;
-}
+    footer {
+        text-align: center;
+    }
 
-.foot {
-    background-color: white;
+    footer i {
+        font-size: 32px;
+        color: blue;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+
+    h3 {
+        font-size: 32px;
+        text-align: center;
+        color: #39b54a;
+    }
+
+    footer h3 {
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .camion {
+        font-size: 32px;
+        text-align: center;
+        color: #39b54a;
+    }
+
+    .articulo {
+        font-size: 18px;
+        font-weight: bold;
+        display: none;
+    }
+
+    article {
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    section {
+        border: solid 1px #ebebeb;
+        margin-top: 15px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .site {
+        display: none;
+    }
+
 }
