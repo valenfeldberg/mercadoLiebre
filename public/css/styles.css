@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 body {
@@ -143,7 +144,6 @@ img {
     margin-right: auto;
 }
 
-
 .hamburguer-button {
     background-color: var(--Celeste);
     display: block;
@@ -167,6 +167,34 @@ footer i {
     color: blue;
     margin-bottom: 12px;
     margin-top: 60px;
+}
+
+.create-form {
+    padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario {
+    background-color: var(--Verde);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px ;
 }
 
 
@@ -208,7 +236,7 @@ footer i {
         display: flex;
         list-style: none;
     }
-
+    
     ul li {
         margin: 0 6px;
     }
@@ -219,7 +247,7 @@ footer i {
     .logo {
         width: 30%;
     }
-    
+
     main section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
