@@ -8,7 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 12px;
 }
 
 body {
@@ -16,12 +20,12 @@ body {
     font-size: 14px;
     background-color: var(--Gris_claro);
 }
-
+    
 header {
     background-color: var(--Amarillo);
     padding: 24px;
 }
-
+    
 .logo {
     width: 50%;
     height: auto;
@@ -31,12 +35,12 @@ header {
 .navegador {
     display: none;
 }
-
+    
 main {
     width: 90%;
     margin: auto;
 }
-
+    
 .encabezado {
     display: flex;
     justify-content: space-between;
@@ -70,7 +74,7 @@ main {
     margin: 0;
     font-size: 16px;
     font-weight: 300;
-    color:  #39b54a;
+    color: #39b54a;
 }
 
 section {
@@ -91,25 +95,25 @@ h3 {
     font-size: 24px;
     padding: 12px;
 }
+
 .visita {
     font-size: 30px;
 }
 
-html {
-    font-family: Roboto;
-    font-size: 12px;
+.ofertas {
+    font-size: 30px;
 }
 
 .navegador a {
     text-decoration: none;
-    color: black
+    color: black;
 }
 
 .articulo {
     display: none;
     text-align: left;
     padding: 24px;
-    color: var(--Gris-claro);
+    color: var(--Gris_claro);
 }
 
 .abajoArticulo {
@@ -124,7 +128,7 @@ html {
     height: 30px;
     color: #39b54a;
     border: 1px solid #39b54a;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 50%;
     position: absolute;
     right: 20px;
@@ -136,6 +140,34 @@ article {
     background-color: white;
     font-size: 19px;
     box-shadow: 0px 0px 10px #ebebeb (100, 100, 100);
+}
+
+.create-form {
+    padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario {
+    background-color: var(--Verde);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 img {
@@ -169,37 +201,7 @@ footer i {
     margin-top: 60px;
 }
 
-.create-form {
-    padding: 20px 15px;
-}
-
-.control-formulario {
-    margin-bottom: 15px;
-}
-
-.control-formulario label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
-}
-
-.control {
-    width: 100%;
-    padding: 8px;
-}
-
-.boton-formulario {
-    background-color: var(--Verde);
-    border: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px ;
-}
-
-
 @media (min-width: 769px) {
-
     .articulo {
         display: block;
     }
@@ -236,11 +238,10 @@ footer i {
         display: flex;
         list-style: none;
     }
-    
+
     ul li {
         margin: 0 6px;
     }
-
 }
 
 @media (min-width: 1200px) {
