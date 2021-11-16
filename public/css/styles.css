@@ -1,216 +1,228 @@
-@media (min-width: 361px){
-    body {
-        background-color: #EAC926;
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris_oscuro: #666;
+    --Gris_claro: #ebebeb;
+    --Verde: #39b54a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--Gris_claro);
+}
+
+header {
+    background-color: var(--Amarillo);
+    padding: 24px;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    justify-content: left;
+}
+
+.navegador {
+    display: none;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cuotas {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.precioDescuento {
+    display: flex;
+    margin: 24px 0;
+}
+
+.precio {
+    width: 30%;
+    font-size: 19px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.descuento {
+    font-size: 19px;
+    color: var(--Verde);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color:  #39b54a;
+}
+
+section {
+    text-align: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 100%;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 12px;
+}
+.visita {
+    font-size: 30px;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: black
+}
+
+.articulo {
+    display: none;
+    text-align: left;
+    padding: 24px;
+    color: var(--Gris-claro);
+}
+
+.abajoArticulo {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+}
+
+.abajoArticulo i {
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article {
+    margin: 12px 0;
+    background-color: white;
+    font-size: 19px;
+    box-shadow: 0px 0px 10px #ebebeb (100, 100, 100);
+}
+
+img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hamburguer-button {
+    background-color: var(--Celeste);
+    display: block;
+    width: 60px;
+    margin: 24px auto 0 auto;
+    font-size: 24px;
+    text-align: center;
+    padding: 18px 0;
+    color: white;
+    border-radius: 10%;
+}
+
+footer {
+    background-color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+footer i {
+    font-size: 38px;
+    color: blue;
+    margin-bottom: 12px;
+    margin-top: 60px;
+}
+
+
+@media (min-width: 769px) {
+
+    .articulo {
+        display: block;
     }
 
-    html{
-        font-family: Roboto;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    main {
-        text-align: center;
-        width: 90vw;
-    }
-
-    .visita {
-        font-size: 12px;
-    }
-
-    .precio {
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .descuento {
-        font-size: 16px;
-        font-weight: 300;
-        color: #39b54a;
-    }
-
-    .cuotas {
-        margin-left: 10%;
-    }
-
-    .burger-menu {
-        padding: 12px;
-        background-color: #03264C;
-        color: white;
-        margin-left: 40%;
-        margin-bottom: 10%;
+    .hamburguer-button {
         display: none;
     }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .tarjeta {
-        padding: 12px;
-        color: #03264C;
-        margin: auto;
-    }
-
-    footer {
-        text-align: center;
-    }
-
-    footer i {
-        font-size: 32px;
-        color: blue;
-        margin-bottom: 1rem;
-        margin-top: 5rem;
-    }
-
-    h3 {
-        font-size: 32px;
-        text-align: center;
-        /*padding: 1rem; */
-        color: #39b54a;
-    }
-
-    footer h3 {
-        font-size: 16px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .camion {
-        font-size: 32px;
-        text-align: center;
-        /*padding: 1rem; */
-        color: #39b54a;
-    }
-
-    .articulo {
-        font-size: 18px;
-        font-weight: bold;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .navegador {
+        display: block;
     }
 
     article {
-        background-color: white;
-        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    section {
-        border: solid 1px #ebebeb;
-        margin-top: 15px;
+    .logo {
+        width: 30%;
+    }
+
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 36px;
+    }
+
+    .navegador {
+        margin-top: 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        margin: 0 6px;
     }
 
 }
 
-@media (max-width: 769px){
-    body {
-        background-color: #EAC926;
+@media (min-width: 1200px) {
+    .logo {
+        width: 30%;
     }
-
-    html{
-        font-family: Roboto;
+    
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 36px;
     }
-
-    p {
-        font-size: 12px;
-    }
-
-    main {
-        text-align: center;
-        width: 90vw;
-    }
-
-    .visita {
-        font-size: 12px;
-    }
-
-    .precio {
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .descuento {
-        font-size: 16px;
-        font-weight: 300;
-        color: #39b54a;
-    }
-
-    .cuotas {
-        margin-left: 10%;
-    }
-
-    .burger-menu {
-        padding: 12px;
-        background-color: #03264C;
-        color: white;
-        margin-left: 40%;
-        margin-bottom: 10%;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .tarjeta {
-        padding: 12px;
-        color: #03264C;
-        margin: auto;
-    }
-
-    footer {
-        text-align: center;
-    }
-
-    footer i {
-        font-size: 32px;
-        color: blue;
-        margin-bottom: 1rem;
-        margin-top: 5rem;
-    }
-
-    h3 {
-        font-size: 32px;
-        text-align: center;
-        color: #39b54a;
-    }
-
-    footer h3 {
-        font-size: 16px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .camion {
-        font-size: 32px;
-        text-align: center;
-        color: #39b54a;
-    }
-
-    .articulo {
-        font-size: 18px;
-        font-weight: bold;
-        display: none;
-    }
-
-    article {
-        background-color: white;
-        margin-bottom: 10px;
-    }
-
-    section {
-        border: solid 1px #ebebeb;
-        margin-top: 15px;
-    }
-
-    .login {
-        display: none;
-    }
-
-    .site {
-        display: none;
-    }
-
 }
