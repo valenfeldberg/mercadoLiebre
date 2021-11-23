@@ -3,7 +3,7 @@
     --Azul: #03264C;
     --Celeste: #1259c3;
     --Gris_oscuro: #666;
-    --Gris_claro: #ebebeb;
+    --Gris: #ebebeb;
     --Verde: #39b54a;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    background-color: var(--Gris_claro);
+    background-color: var(--Gris);
 }
     
 header {
@@ -110,14 +110,14 @@ h3 {
 }
 
 .articulo {
-    display: none;
     text-align: left;
     padding: 24px;
-    color: var(--Gris_claro);
+    color: var(--Gris);
+    opacity: 0;
 }
 
 .abajoArticulo {
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--Gris);
     position: relative;
 }
 
@@ -126,8 +126,8 @@ h3 {
     padding: 5px;
     width: 30px;
     height: 30px;
-    color: #39b54a;
-    border: 1px solid #39b54a;
+    color: var(--Verde);
+    border: 1px solid var(--Verde);
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -159,6 +159,8 @@ article {
 .control {
     width: 100%;
     padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .boton-formulario {
@@ -168,6 +170,10 @@ article {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.boton-formulario:hover {
+    background-color: #0022AA;
 }
 
 img {
@@ -201,21 +207,32 @@ footer i {
     margin-top: 60px;
 }
 
-@media (min-width: 769px) {
-    .articulo {
-        display: block;
-    }
+footer i:hover {
+    color: red;
+}
 
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 1s;
+}
+
+article:hover i {
+    transform: rotate(-90deg);
+    transition: all 1s;
+}
+
+article:hover .articulo {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+@media (min-width: 769px) {
     .hamburguer-button {
         display: none;
     }
 
     .navegador {
         display: block;
-    }
-
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .logo {
@@ -241,6 +258,11 @@ footer i {
 
     ul li {
         margin: 0 6px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
     }
 }
 
