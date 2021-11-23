@@ -112,7 +112,7 @@ h3 {
 .articulo {
     text-align: left;
     padding: 24px;
-    color: var(--Gris);
+    color: black;
     opacity: 0;
 }
 
